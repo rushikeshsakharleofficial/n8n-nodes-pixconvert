@@ -7,10 +7,10 @@ describe('PixConvertApi credential', () => {
     expect(cred.displayName).toBe('PixConvert API');
   });
 
-  it('has a baseUrl property of type string', () => {
+  it('has an apiUrl property of type string', () => {
     const cred = new PixConvertApi();
-    const baseUrlProp = cred.properties.find((p) => p.name === 'baseUrl');
-    expect(baseUrlProp).toBeDefined();
-    expect(baseUrlProp?.type).toBe('string');
+    const apiUrlProp = cred.properties.find((p) => p.name === 'apiUrl');
+    expect(apiUrlProp).toBeDefined();
+    expect(apiUrlProp?.type).toBe('string');
   });
 });

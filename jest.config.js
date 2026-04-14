@@ -3,8 +3,8 @@ module.exports = {
   testEnvironment: 'node',
   testMatch: ['**/tests/**/*.test.ts'],
   moduleFileExtensions: ['ts', 'js', 'json'],
-  globals: {
-    'ts-jest': {
+  transform: {
+    '^.+\\.tsx?$': ['ts-jest', {
       tsconfig: {
         target: 'ES2019',
         module: 'commonjs',
@@ -12,6 +12,6 @@ module.exports = {
         strict: true,
         skipLibCheck: true,
       },
-    },
+    }],
   },
 };

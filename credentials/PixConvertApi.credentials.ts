@@ -6,12 +6,12 @@ export class PixConvertApi implements ICredentialType {
   documentationUrl = 'https://github.com/rushikeshsakharleofficial/n8n-nodes-pixconvert';
   properties: INodeProperties[] = [
     {
-      displayName: 'Base URL',
-      name: 'baseUrl',
+      displayName: 'API URL',
+      name: 'apiUrl',
       type: 'string',
       default: '',
-      placeholder: 'https://your-server.com',
-      description: 'The base URL of your PixConvert API server (no trailing slash)',
+      placeholder: 'https://your-server.com/api/v1',
+      description: 'Your PixConvert API URL including /api/v1 — no trailing slash',
       required: true,
     },
   ];
